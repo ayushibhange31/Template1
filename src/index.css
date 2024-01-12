@@ -1,0 +1,468 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =============Navbar============== */
+.container-fluid{
+  background-color: rgb(221, 73, 122);
+  /* padding: 30px; */
+  margin: 0;
+}
+
+.navbar{
+  padding: 0;
+  
+}
+
+.cart-count{
+  position: relative;
+  top: -10px;
+}
+
+.navbar-brand{
+  font-size: 40px;
+  font-weight: 600;
+  color:blanchedalmond;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-link{
+  color: white;
+  font-size: 28px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* 
+.search-btn {
+    color: white;
+} */
+
+/* ===============Home Page=============== */
+
+
+.sticky-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sticky-image {
+  width: 100%;
+  height: 25%;
+  position: fixed;
+  top: 1;
+  left: 0;
+    z-index: 0;
+}
+
+.sticky-image img{
+  width: 100%;
+  height: 35rem;
+  opacity: 75%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  /* height: 10px; */
+   /* display: flex; */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  z-index: 1;
+}
+
+.form-control {
+  width: 80%;
+}
+
+.overlay-content{
+  font-size: 80px;
+  font-weight: 800;
+  padding-top: 10%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 20%;
+}
+
+
+.offer{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.s-button{
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* ================About Page============== */
+
+.for-about{
+  background-color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.card1{
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.card1 img{
+  height: 100%;
+  width: 100%;
+  animation: slideInLeft  1s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.card2{
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  animation: slideInRight  1s ease-in-out;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+   .sticky-image{
+    height: 100%;
+   }
+
+}
+
+.overlay2{
+  position: absolute;
+  bottom: 300px;
+  left: 20%;
+  width: 50%;
+   text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  z-index: 2;
+}
+
+.overlay-content2{
+  font-size: 80px;
+  font-weight: 800;
+  padding-top: 10%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 20%;
+}
+
+.key-feature-content{
+  background-color: pink;
+}
+
+.key-feature-content1{
+  background-color: white;
+  margin: 30px;
+}
+/* =====================Product Page======================== */
+  .for-container{
+    background-color: white;
+    z-index: 1;
+    position: relative; 
+    padding: 15px;
+  }
+
+.product-head{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    padding-top: 30px;
+}
+
+.card-img-top {
+  position: relative;
+ 
+  overflow: hidden;
+}
+
+.card-img-top .fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.card-img-top .fade-in.active {
+  opacity: 1;
+}
+
+.carousel-indicators [data-bs-target] {
+  border-radius:50%;
+   height:20px;
+   width:20px ;
+   position: relative;
+   top: 20px;
+   background-color: palevioletred;
+}
+
+
+
+/* ==============Footer================== */
+
+.for-footer{
+  background-color: rgb(65, 63, 63);
+  z-index: 1;
+  position: relative;
+}
+
+.f-head{
+  color: white;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.f-icons{
+  color: white;
+  text-align: center;
+}
+
+.f-headcontent{
+  /* text-align: center; */
+  color: white;
+  padding-left: 130px;
+}
+
+.f-headcontent2{
+  color: white;
+  padding-left: 100px;
+}
+
+.f-headcontent3{
+  color: white;
+  padding-left: 80px;
+}
+
+.f-headcontent4{
+  padding-left: 80px;
+}
+
+@media only screen and (max-width: 576px) {
+  .f-head{
+    padding-top: 50px;
+    padding-right: 20px;
+  }
+}
+
+/* ==============Contact PAge================== */
+
+.map-container{
+  height: 100%;
+  width: 100%;
+}
+
+.map-section .map-container #gmap_canvas{
+   height: 65vh;
+   width: 100%;
+   border-radius: 5px;
+}
+
+/* ==============Login============== */
+
+.login-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  width: 30%;
+}
+
+.login-form h2 {
+  text-align: center;
+}
+
+.logo{
+  justify-content: center;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin-bottom: 8px;
+ 
+}
+
+.login-form input {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.login-form button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #45a049;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* =============Cart============= */
+
+.s-head{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(236, 209, 214);
+}
+
+.p-desc{
+   text-align: justify;
+}
+
+/* ===============New ================= */
+.section-title h3 {
+  font-size: 36px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.section-title h3:before {
+  position: absolute;
+  content: '';
+  width: 80px;
+  height: 1px;
+  background: #A4A4A4;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+  -ms-transform: translate(-50%, 0px);
+  transform: translate(-50%, 0px);
+}
+
+.section-title h3:after {
+  position: absolute;
+  content: '';
+  bottom: -5px;
+  background: #fff;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #141414;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0px) rotate(45deg);
+  -ms-transform: translate(-50%, 0px) rotate(45deg);
+  transform: translate(-50%, 0px) rotate(45deg);
+}
+
+.collection-item .thumb img 
+ {
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Set the width of your image container */
+    height: 100%; /* Set the height of your image container */
+    justify-self: center;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.thumb:hover img {
+    transform: scale(0.9); /* Adjust the scale factor for zoom in */
+}
+
+.collection-item .thumb :hover {
+    cursor: pointer;
+}
+
+
+
+.thumb{
+  position: relative;
+}
+
+.thumb-content1{
+  position: absolute;
+  top: 7%;
+  left: 15%;
+}
+
+
+.thumb-content2{
+  position: absolute;
+  top: 7%;
+  left: 65%;
+}
+
+/* =============Accessories=============== */
+.container-accessories{
+  background-image: url("./components/Images/accessories.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* height: 500%; */
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.star{
+  text-align: center;
+  color: gold;
+}
+
+.cart-text{
+  text-align: end;
+  padding-top: 90%;
+}
+.cart-textc{
+  text-align: end;
+  padding-top: 70%;
+}
+
+.sty{
+  list-style: none;
+}
+
+.fa-heart{
+  color: red;
+}
+
+/* =========New================ */
+
+.top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* background-color: ; */
+  color:  black;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.top-btn:hover {
+  background-color: gainsboro;
+  color: #141414;
+}
